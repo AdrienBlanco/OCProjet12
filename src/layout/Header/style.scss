@@ -1,0 +1,14 @@
+@import "../../utils/colors.scss";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 a {
+        font-size: 30px;
+    }
+    a {
+        color: $secondary;
+        font-size: 20px;
+    }
+}
