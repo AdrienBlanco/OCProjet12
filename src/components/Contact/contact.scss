@@ -1,0 +1,18 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    font-size: x-large;
+    h2 {
+        font-family: 'Silkscreen', 'sans-serif';
+    }
+    a{
+        color: black;
+    }
+    a :hover{
+        opacity: 0.8;
+    }
+}
+

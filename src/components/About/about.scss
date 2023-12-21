@@ -1,0 +1,104 @@
+.about{
+    position: relative;
+    width: 100vw;
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        font-weight: 600;
+        font-family: 'Poiret One', cursive;
+        color: black;
+        img{
+            text-align: center;
+            height: 10rem;
+            border-radius: 50%;
+        }
+        .paragraph{
+            text-align: left;
+            font-size: 1.1rem;
+            span{
+                font-family: 'Silkscreen', 'sans-serif';
+                font-size: 1rem;
+            }
+        }
+        .info{
+            text-align: right;
+            .name{
+                font-family: 'Montserrat', cursive;
+                font-size: 1.5rem;
+
+                .github-i {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+            font-family: 'Silkscreen', 'sans-serif';
+            a{
+                color: black;
+                width: 10px;
+            }
+            a:hover{
+                opacity: .8;
+            }
+        }
+    }
+}
+
+//Iphone
+@media screen and (max-width: 350px){
+    .about{
+        height: 150vh;
+        .content{
+            width: 15rem;
+            font-size: .8rem;
+            line-height: 180%;
+        }
+    }
+}
+//Iphone
+@media screen and (min-width: 351px) and (max-width: 599px){
+    .about{
+        height: 125vh;
+        .content{
+            width: 18rem;
+            font-size: .8rem;
+            line-height: 180%;
+        }
+    }
+}
+//Ipad and small tablet 
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    .about{
+        height: 80vh;
+        .content{
+            width: 30rem;
+            font-size: .8rem;
+            line-height: 180%;
+        }
+    }
+}
+// Ipad pro 
+@media screen and (min-width: 1023px) and (max-width: 1919px){
+    .about{
+        height: 75vh;
+        .content{
+            width: 45rem;
+            font-size: .9rem;
+            line-height: 200%;
+        }
+    }
+}
+
+//desktop 
+@media screen and (min-width: 1920px){
+    .about{
+        height: 75vh;
+        .content{
+            width: 50rem;
+            font-size: .9rem;
+            line-height: 200%;
+        }
+    }
+}
