@@ -48,27 +48,28 @@ export default function ProjectCard({ img, title, title_des, description, alt, g
                             exit={{ opacity: 0, y: 200 }}
                             transition={{ duration: .6, ease: easeInOut }}
                         />
-                        <m.h3
-                            initial={{ opacity: 0, y: 200 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 200 }}
-                            transition={{ delay: .2, duration: .6, ease: easeInOut }}
-                        >{title_des}</m.h3>
-                        <m.div className="content"
-                            initial={{ opacity: 0, y: 200 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 200 }}
-                            transition={{ delay: .4, duration: .6, ease: easeInOut }}
-                        >
-                            {description}
+                            <m.h3
+                                initial={{ opacity: 0, y: 200 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 200 }}
+                                transition={{ delay: .2, duration: .6, ease: easeInOut }}
+                            >{title_des}</m.h3>
+                            <m.div className="content"
+                                initial={{ opacity: 0, y: 200 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 200 }}
+                                transition={{ delay: .4, duration: .6, ease: easeInOut }}
+                            >
+                                {description}
 
-                            <br/><span>{skills}</span>
+                                <br /><span>{skills}</span>
 
-                            {github && <a className="github-link" href={github}><p><BsGithub className="github-icon" /> Le code du projet </p></a>}
-                        </m.div>
+                                {github && <a className="github-link" href={github}><p><BsGithub className="github-icon" /> Le code du projet </p></a>}
+                            </m.div>
+
                     </div>
                 </div>
             }
-        </div>
+        </div >
     );
 }
