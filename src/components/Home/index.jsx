@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from "react"
 import "./style.scss";
-
-import logo from "../../img/logo.png"
 import banner from "../../img/banner.webp"
 import {BsMouse} from "react-icons/bs";
 
@@ -79,13 +77,13 @@ export default function Home(){
     },[])
 
     return(
-        <section className="home">
+        <section className="home" id="home">
             <div className="main-title">
                 <h1 ref={h1Ref}>Bienvenue sur mon <span>Portfolio</span></h1>
-                <img src={logo} alt="thinking-raptor" ref={logoRef}/>
+                <img src="./img/logo.png" alt="thinking-raptor" ref={logoRef}/>
             </div>
             <div className="banner" ref={triggerRef}>
-                <img src={banner} alt="bannière Jurassic Park sepia"/>
+                <img src={banner} alt="bannière Jurassic Park sepia" width="1920" height="1312"/>
                 <div className="text-at-bottom" ref={scrollRef}>
                     <p><BsMouse className="icon"/> SCROLL</p>
                     <span>POUR EN SAVOIR PLUS SUR MOI</span>

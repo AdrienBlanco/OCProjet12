@@ -41,7 +41,7 @@ function About() {
     }, [imgRef, paraRef, infoRef])
 
     return (
-        <section className="about">
+        <section className="about" id="about">
             <div className="content">
                 <img src={adrien} alt="Adrien Blanco" ref={imgRef}></img>
                 <p className="paragraph" ref={paraRef}>
