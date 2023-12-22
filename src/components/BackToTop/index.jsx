@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {BsArrowUpCircleFill} from "react-icons/bs"
-import "./backToTop.scss"
+import "./style.scss";
 import Link from "react-scroll/modules/components/Link";
 
 const BackToTop = () => {

@@ -1,6 +1,6 @@
 [
     {
-        "img": "../../img/ArgentBank.webp",
+        "img": "../../public/img/ArgentBank.webp",
         "title": "Argent Bank",
         "title_des": "Implémenter le front-end d'une application bancaire avec React",
         "description": "Développement du front-end d'une nouvelle banque en ligne avec React & Redux. Gestion des connexions utilisateurs et affichages de leurs comptes et transactions ainsi que la possiblité de modifier leur pseudo. Le tout via des appels API. Création de nouvelles routes API pour la gestion des transactions.",
@@ -27,7 +27,7 @@
         "img": "../../img/Kasa.webp",
         "title": "Kasa",
         "title_des": "Créer une application web de location immobilière avec React",
-        "description": "Développement du front-end d'une nouvelle banque en ligne avec React & Redux. Gestion des connexions utilisateurs et affichages de leurs comptes et transactions ainsi que la possiblité de modifier leur pseudo. Le tout via des appels API. Création de nouvelles routes API pour la gestion des transactions.",
+        "description": "Refonte d'un site de location d'appartements. Intégration de React avec des composants et les différentes routes. Création d'animations CSS de menus déroulants. Mise en place de requêtes vers un fichier Json pour alimenter les différents contenus sur le site. Intégration du site de manière responsive.",
         "skills": "Javascript | React | Sass",                 
         "github": "https://github.com/AdrienBlanco/OCProjet8"
     },    

@@ -1,5 +1,5 @@
-import React, {useState } from "react"
-import "./navbar.scss"
+import React, {useState } from "react";
+import "./style.scss";
 import Link from "react-scroll/modules/components/Link";
 import {FaBars, FaTimes} from "react-icons/fa";
 

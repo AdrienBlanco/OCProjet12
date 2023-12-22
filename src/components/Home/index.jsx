@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import "./home.scss"
+import "./style.scss";
 
 import logo from "../../img/logo.png"
 import banner from "../../img/banner.webp"
@@ -74,17 +74,18 @@ export default function Home(){
      
         AnimateObject.map((item)=>{
             gsapAnimation(item);
+            return item;
         })
     },[])
 
     return(
         <section className="home">
-            <div className="section1">
+            <div className="main-title">
                 <h1 ref={h1Ref}>Bienvenue sur mon <span>Portfolio</span></h1>
-                <img src={logo} ref={logoRef}/>
+                <img src={logo} alt="thinking-raptor" ref={logoRef}/>
             </div>
-            <div className="section2" ref={triggerRef}>
-                <img src={banner}/>
+            <div className="banner" ref={triggerRef}>
+                <img src={banner} alt="bannière Jurassic Park sepia"/>
                 <div className="text-at-bottom" ref={scrollRef}>
                     <p><BsMouse className="icon"/> SCROLL</p>
                     <span>POUR EN SAVOIR PLUS SUR MOI</span>

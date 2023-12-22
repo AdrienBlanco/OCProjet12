@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react"
-import "./contact.scss"
-import emailjs from '@emailjs/browser';
+import React, { useEffect, useRef } from "react";
+import "./style.scss";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 function Contact() {
 
     const textH1Ref = useRef(null);
-    const RefArray = [textH1Ref];
 
     const gsapAnimation = (ref) => {
         gsap.fromTo(ref.current,
@@ -29,8 +27,10 @@ function Contact() {
     }
 
     useEffect(() => {
+        const RefArray = [textH1Ref];
+
         RefArray.map(item => gsapAnimation(item));
-    }, [])
+    }, [textH1Ref]);
 
     return (
         <footer className="contact">

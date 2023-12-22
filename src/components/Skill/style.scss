@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&display=swap');
-.skill-page{
+
+.skill-page {
     position: relative;
     height: 40vh;
     width: 100vw;
@@ -7,271 +8,344 @@
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
 
-    .skill-box{
+    .skill-box {
         display: flex;
         justify-content: center;
         padding: 1rem;
         font-weight: 600;
-        font-size: small;        
+        font-size: small;
     }
 
-    .skill-intro{
-        span{
+    .skill-intro {
+        span {
             font-weight: bold;
         }
-        .code-box{
+
+        .code-box {
             position: relative;
             padding: 1rem;
             text-align: left;
             background: rgb(241, 241, 241);
             overflow: hidden;
-            .typing{
+
+            .typing {
                 position: absolute;
                 background: rgb(241, 241, 241);
                 width: 100%;
                 animation: typing 8s ease-in-out;
                 animation-iteration-count: infinite;
                 animation-direction: alternate;
-                .pointer{
+
+                .pointer {
                     position: absolute;
                     animation: blink .6s ease-in-out;
                     animation-iteration-count: infinite;
                     animation-direction: alternate;
                 }
             }
-            @keyframes blink{
-                from{opacity: 1;}
-                to{opacity: 0;}
+
+            @keyframes blink {
+                from {
+                    opacity: 1;
+                }
+
+                to {
+                    opacity: 0;
+                }
             }
-            @keyframes typing{
-                0% {left: 90%;}
-                40% {left: 2rem;}
-                60% {left: 2rem;}
-                100% {left: 90%;}
+
+            @keyframes typing {
+                0% {
+                    left: 90%;
+                }
+
+                40% {
+                    left: 2rem;
+                }
+
+                60% {
+                    left: 2rem;
+                }
+
+                100% {
+                    left: 90%;
+                }
             }
         }
     }
 }
 
 //Iphone
-@media screen and (max-width: 350px){
-    h1{
+@media screen and (max-width: 350px) {
+    h1 {
         font-size: 1rem;
     }
-    .skill-intro{
+
+    .skill-intro {
         position: relative;
-        p{
+
+        p {
             font-size: .8rem;
-            span{
+
+            span {
                 font-size: 1.5rem;
             }
         }
-        .code-box{
+
+        .code-box {
             width: 100%;
-            pre{
+
+            pre {
                 font-size: .5rem;
             }
-            .typing{
+
+            .typing {
                 height: .5rem;
                 bottom: 1.5rem;
-                .pointer{
+
+                .pointer {
                     font-size: .5rem;
                 }
             }
         }
     }
-    .skill-box{
+
+    .skill-box {
         position: relative;
         margin: 0 auto;
         width: 20rem;
-        h2, .icon{
+
+        h2,
+        .icon {
             font-size: .8rem;
             text-align: left;
         }
-        h3{
+
+        h3 {
             font-size: .6rem;
         }
 
     }
 }
+
 //Iphone
-@media screen and (min-width: 351px) and (max-width: 600px){
-    h1{
+@media screen and (min-width: 351px) and (max-width: 600px) {
+    h1 {
         font-size: 1.2rem;
     }
-    .skill-intro{
+
+    .skill-intro {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p{
+
+        p {
             font-size: .8rem;
-            span{
+
+            span {
                 font-size: 1.5rem;
             }
         }
-        .code-box{
+
+        .code-box {
             width: 100%;
-            pre{
+
+            pre {
                 font-size: .6rem;
             }
-            .typing{
+
+            .typing {
                 height: 3rem;
                 bottom: 1.5rem;
-                .pointer{
+
+                .pointer {
                     font-size: .6rem;
                 }
             }
         }
     }
-    .skill-box{
+
+    .skill-box {
         position: relative;
         margin: 0 auto;
         width: 80%;
-        h2, .icon{
+
+        h2,
+        .icon {
             font-size: 3rem;
             text-align: left;
         }
-        h3{
+
+        h3 {
             font-size: .6rem;
         }
 
     }
 }
+
 //Ipad and small tablet 
-@media screen and (min-width: 601px) and (max-width: 1023px){
-    .skill-intro{
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+    .skill-intro {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p{
+
+        p {
             font-size: 1rem;
-            span{
+
+            span {
                 font-size: 1.8rem;
             }
         }
-        
-        .code-box{
+
+        .code-box {
             width: 30rem;
-            pre{
+
+            pre {
                 font-size: .8rem;
             }
-            .typing{
+
+            .typing {
                 height: .8rem;
                 bottom: 1.9rem;
-                .pointer{
+
+                .pointer {
                     font-size: .8rem;
                 }
             }
         }
     }
-    .skill-box{
+
+    .skill-box {
         position: relative;
         margin: 0 auto;
         width: 30rem;
-        h2, .icon{
+
+        h2,
+        .icon {
             font-size: 3rem;
             text-align: left;
         }
-        h3{
+
+        h3 {
             font-size: .8rem;
         }
-        
+
     }
 }
+
 // Ipad pro 
-@media screen and (min-width: 1023px) and (max-width: 1899px){
-    .skill-intro{
+@media screen and (min-width: 1023px) and (max-width: 1899px) {
+    .skill-intro {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p{
+
+        p {
             font-size: 2.5rem;
-            span{
+
+            span {
                 font-size: 2rem;
             }
         }
-        .code-box{
+
+        .code-box {
             width: 40rem;
-            pre{
+
+            pre {
                 font-size: 1rem;
             }
-            .typing{
+
+            .typing {
                 height: 1rem;
                 bottom: 2rem;
-                .pointer{
+
+                .pointer {
                     font-size: 1rem;
                 }
             }
         }
     }
-    .skill-box{
+
+    .skill-box {
         position: relative;
         margin: 0 auto;
         width: 40rem;
-        h2, .icon{
+
+        h2,
+        .icon {
             font-size: 5rem;
             text-align: left;
         }
-        h3{
+
+        h3 {
             font-size: 1rem;
         }
-        
+
     }
 }
 
 //desktop 
-@media screen and (min-width: 1900px){
-    .skill-intro{
+@media screen and (min-width: 1900px) {
+    .skill-intro {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p{
+
+        p {
             font-size: 1.2rem;
-            span{
+
+            span {
                 font-size: 2rem;
             }
         }
-        .code-box{
+
+        .code-box {
             width: 40rem;
-            pre{
+
+            pre {
                 font-size: 1rem;
             }
-           
-            .typing{
+
+            .typing {
                 height: 1.3rem;
                 bottom: 2rem;
                 position: relative;
-                .pointer{
+
+                .pointer {
                     position: absolute;
                     font-size: 1.2rem;
                 }
             }
         }
     }
-    .skill-box{
+
+    .skill-box {
         position: relative;
         margin: 0 auto;
         width: 40rem;
-        h2{
+
+        h2 {
             font-size: 1.5rem;
             text-align: left;
         }
-        .icon{
+
+        .icon {
             font-size: 5rem;
         }
-        h3{
+
+        h3 {
             font-size: 1rem;
         }
-        
+
     }
 
 }
-

@@ -1,16 +1,19 @@
-.back-to-top{
+.back-to-top {
     position: fixed;
     bottom: 2%;
     right: 2%;
     z-index: 1000;
-    .button{
+
+    .button {
         background: none;
         border: none;
-        .icon{
+
+        .icon {
             font-size: 2rem;
             color: #2e2e2e;
         }
-        .icon:hover{
+
+        .icon:hover {
             cursor: pointer;
         }
     }

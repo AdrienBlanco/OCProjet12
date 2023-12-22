@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react"
-import "./skill.scss"
-import { DiHtml5, DiCss3, DiJavascript, DiReact, DiSass, DiVisualstudio, DiGit } from "react-icons/di"
+import React, { useEffect, useRef } from "react";
+import "./style.scss";
+import { DiHtml5, DiCss3, DiJavascript, DiReact, DiSass, DiVisualstudio, DiGit } from "react-icons/di";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -37,8 +37,6 @@ export default function Skill() {
     const skillIntroRef = useRef(null);
     const skillBoxRef = useRef(null);
 
-    const refEle = [h1Ref, skillIntroRef, skillBoxRef]
-
     const gsapAnimation = (ref) => {
         gsap.fromTo(ref.current,
             {
@@ -57,11 +55,14 @@ export default function Skill() {
     }
 
     useEffect(() => {
+
+        const refEle = [h1Ref, skillIntroRef, skillBoxRef];
+
         refEle.map(item => {
             gsapAnimation(item);
+            return item;
         })
-
-    }, [])
+    }, [h1Ref, skillIntroRef, skillBoxRef]);
 
     return (
         <section className="skill-page">

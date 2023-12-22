@@ -1,95 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&display=swap');
-.project-content{
+
+.project-content {
     position: relative;
     width: 100vw;
     padding-top: 3rem;
     font-family: 'Montserrat', sans-serif;
-    font-size: .9rem;
     line-height: 200%;
-    color: rgb(70, 70, 70);
-    .intro{
+    color: black;
+
+    .intro {
         display: flex;
         justify-content: center;
         align-items: center;
-        .logo{
+
+        .logo {
             padding-left: 1rem;
         }
-        .text{
-            h2{
 
-            }
-            span{
+        .text {
+
+            span {
                 font-weight: bolder;
                 font-size: larger;
                 font-family: 'Silkscreen', 'sans-serif';
+                font-size: 1rem;
+                color: rgb(70, 70, 70);
             }
-            p{
+
+            p {
                 font-weight: 600;
                 font-family: 'Poiret One', cursive;
                 font-size: 1.1rem;
             }
         }
     }
-    .projects{
+
+    .projects {
         margin-top: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        .project{
+
+        .project {
             margin: 2rem;
         }
     }
 }
 
 //Iphone
-@media screen and (max-width: 600px){
-    .intro{
+@media screen and (max-width: 600px) {
+    .intro {
         flex-direction: column;
         margin: 5rem 1rem;
-        .logo{
+
+        .logo {
             height: 10rem;
         }
-        .text{
+
+        .text {
             margin-left: 1rem;
             text-align: center;
         }
     }
-    .projects{
-        flex-wrap: wrap;       
+
+    .projects {
+        flex-wrap: wrap;
     }
 }
 
 
 // Ipad and small tablet 
-@media screen and (min-width: 601px) and (max-width: 1919px){
-    .intro{
+@media screen and (min-width: 601px) and (max-width: 1919px) {
+    .intro {
         margin: 0 5rem;
-        .logo{
+
+        .logo {
             height: 15rem;
         }
-        .text{
+
+        .text {
             margin-left: 1rem;
             text-align: left;
         }
     }
-    .projects{
+
+    .projects {
         flex-wrap: wrap;
     }
 }
 
 //desktop 
-@media screen and (min-width: 1920px){
-    .intro{
+@media screen and (min-width: 1920px) {
+    .intro {
         margin: 0 2rem;
-        .logo{
+
+        .logo {
             height: 15rem;
         }
-        .text{
+
+        .text {
             margin-left: 5rem;
             text-align: left;
         }
     }
-    .projects{
+
+    .projects {
         flex-wrap: wrap;
     }
 }

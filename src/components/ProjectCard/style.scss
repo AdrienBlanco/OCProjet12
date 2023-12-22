@@ -1,8 +1,9 @@
-.project{
+.project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .background{
+
+    .background {
         position: relative;
         display: flex;
         flex-direction: row;
@@ -12,13 +13,14 @@
         height: 20rem;
         border: solid 1px #e4e4e4;
         overflow: hidden;
-        img{
+
+        img {
             width: 100%;
             z-index: 10;
             transition: width .6s ease-in-out;
         }
-        
-        .click-me-mate{
+
+        .click-me-mate {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -26,7 +28,8 @@
             opacity: .3;
             z-index: 11;
         }
-        .click-me{
+
+        .click-me {
             position: absolute;
             display: flex;
             justify-content: center;
@@ -42,17 +45,21 @@
             z-index: 12;
         }
     }
-    .background:hover{
+
+    .background:hover {
         cursor: pointer;
-        img{
+
+        img {
             width: 120%;
             transition: width .6s ease-in-out;
         }
     }
-    .title{
+
+    .title {
         font-weight: 600;
     }
-    .detail{
+
+    .detail {
         position: fixed;
         width: 100vw;
         height: 100vh;
@@ -63,10 +70,12 @@
         font-weight: 600;
         z-index: 10000;
         transition: all .6s ease-in-out;
-        span{
+
+        span {
             font-family: 'Silkscreen', 'sans-serif';
         }
-        .mate{
+
+        .mate {
             position: absolute;
             width: 100vw;
             height: 100vh;
@@ -75,7 +84,8 @@
             background: black;
             opacity: .5;
         }
-        .project-card{
+
+        .project-card {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -83,7 +93,8 @@
             border-radius: .5rem;
             background: white;
             padding: 5%;
-            button{
+
+            button {
                 position: fixed;
                 top: 1rem;
                 right: 1rem;
@@ -92,15 +103,18 @@
                 border: none;
                 background: none;
             }
-            button:hover{
+
+            button:hover {
                 cursor: pointer;
                 opacity: .8;
             }
-            .title-detail{
+
+            .title-detail {
                 text-align: center;
                 font-size: smaller;
             }
-            .content{
+
+            .content {
                 position: absolute;
                 bottom: 0;
                 overflow-y: scroll;
@@ -108,14 +122,16 @@
                 padding: 1rem;
             }
 
-            .github-link{
+            .github-link {
                 text-decoration: none;
                 color: #2e2e2e;
-                .github-icon{
+
+                .github-icon {
                     margin-right: .5rem;
                 }
             }
-            .github-link:hover{
+
+            .github-link:hover {
                 opacity: .8;
                 cursor: pointer;
             }
@@ -124,23 +140,28 @@
 }
 
 //Iphone
-@media screen and (max-width: 350px){
-    .project{
+@media screen and (max-width: 350px) {
+    .project {
         height: 18rem;
         width: 16rem;
-        .project-card{
+
+        .project-card {
             width: 15rem;
             height: 35rem;
-            img{
+
+            img {
                 width: 100%;
             }
-            h2{
+
+            h3 {
                 font-size: smaller;
             }
-            .content{
+
+            .content {
                 height: 45%;
                 font-size: .6rem;
-                p{
+
+                p {
                     margin: 1rem .5rem;
                     text-align: left;
                 }
@@ -148,26 +169,30 @@
         }
     }
 }
+
 //Iphone
-@media screen and (min-width: 351px) and (max-width: 599px){
-    .project{
+@media screen and (min-width: 351px) and (max-width: 599px) {
+    .project {
         height: 18rem;
         width: 16rem;
 
-        .project-card{
+        .project-card {
             width: 20rem;
             height: 35rem;
-            img{
+
+            img {
                 height: 9rem;
             }
-            h2{
+
+            h3 {
                 font-size: smaller;
             }
-            .content{
+
+            .content {
                 height: 45%;
                 font-size: .7rem;
-                
-                p{
+
+                p {
                     margin: 1rem 1rem;
                     text-align: left;
                 }
@@ -175,26 +200,30 @@
         }
     }
 }
+
 //Ipad and small tablet 
-@media screen and (min-width: 600px) and (max-width: 1023px){
-    .project{
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .project {
         height: 22rem;
         width: 20rem;
 
-        .project-card{
+        .project-card {
             width: 30rem;
             height: 45rem;
-            img{
+
+            img {
                 height: 12rem;
             }
-            h2{
+
+            h3 {
                 font-size: medium;
             }
-            .content{
+
+            .content {
                 height: 50%;
                 font-size: .8rem;
-                
-                p{
+
+                p {
                     margin: 1rem 1.5rem;
                     text-align: left;
                 }
@@ -202,26 +231,30 @@
         }
     }
 }
+
 // Ipad pro 
-@media screen and (min-width: 1023px) and (max-width: 1919px){
-    .project{
+@media screen and (min-width: 1023px) and (max-width: 1919px) {
+    .project {
         height: 22rem;
         width: 20rem;
 
-        .project-card{
+        .project-card {
             width: 50rem;
             height: 50rem;
-            img{
+
+            img {
                 height: 17rem;
             }
-            h2{
+
+            h3 {
                 font-size: large;
             }
-            .content{
+
+            .content {
                 height: 45%;
                 font-size: 1rem;
-                
-                p{
+
+                p {
                     margin: 1rem 2rem;
                     text-align: left;
                 }
@@ -231,25 +264,28 @@
 }
 
 //desktop 
-@media screen and (min-width: 1920px){
-    .project{
+@media screen and (min-width: 1920px) {
+    .project {
         height: 22rem;
         width: 20rem;
 
-        .project-card{
+        .project-card {
             width: 50rem;
             height: 50rem;
-            img{
+
+            img {
                 height: 17rem;
             }
-            h2{
+
+            h3 {
                 font-size: large;
             }
-            .content{
+
+            .content {
                 height: 50%;
                 font-size: 1rem;
-                
-                p{
+
+                p {
                     margin: 1rem 2rem;
                     text-align: left;
                 }

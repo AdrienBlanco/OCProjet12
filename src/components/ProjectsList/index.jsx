@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./projects.scss";
+import "./style.scss";
 import ProjectCard from "../ProjectCard";
 import ArgentBank from "../../img/ArgentBank.webp";
 import Booki from "../../img/Booki.webp";
@@ -7,7 +7,7 @@ import OhMyFood from "../../img/OhMyFood.webp";
 import Kasa from "../../img/Kasa.webp";
 import Events from "../../img/events.webp";
 import logo from "../../img/logo2.png";
-// import projectsData from "../../data/projectsData.json"
+// import projectsData from "../../../public/data/projectsData.json";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 
@@ -42,7 +42,7 @@ const projectArr = [
         img: Kasa,
         title: "Kasa",
         title_des: "Créer une application web de location immobilière avec React",
-        description: "Développement du front-end d'une nouvelle banque en ligne avec React & Redux. Gestion des connexions utilisateurs et affichages de leurs comptes et transactions ainsi que la possiblité de modifier leur pseudo. Le tout via des appels API. Création de nouvelles routes API pour la gestion des transactions.",
+        description: "Refonte d'un site de location d'appartements. Intégration de React avec des composants et les différentes routes. Création d'animations CSS de menus déroulants. Mise en place de requêtes vers un fichier Json pour alimenter les différents contenus sur le site. Intégration du site de manière responsive.",
         skills: "Javascript | React | Sass",                 
         github: "https://github.com/AdrienBlanco/OCProjet8"
     },    
@@ -89,9 +89,9 @@ export default function Projects(){
     return(
         <section className="project-content">
             <div className="intro">
-                <img src={logo} className="logo" ref={imgRef} />
+                <img src={logo} alt="symbole circulaire" className="logo" ref={imgRef} />
                 <div className="text">
-                    <h2 ref={textH1Ref}>MES PROJETS</h2>
+                    <h2 ref={textH1Ref}>PROJETS</h2>
                     <p ref={infoRef}>
                         Hey,<br/>
                         Voici une <span>sélection des projets</span> sur lesquels j'ai pu travailler en <span>2023</span>.<br/>

@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from "react"
-import "./about.scss"
-import adrien from "../../img/adrien.webp"
+import React, { useRef, useEffect } from "react";
+import "./style.scss";
+import adrien from "../../img/adrien.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { BsGithub } from "react-icons/bs";
@@ -12,9 +12,9 @@ function About() {
     const paraRef = useRef(null);
     const infoRef = useRef(null);
 
-    const AnimateObject = [imgRef, paraRef, infoRef];
-
     useEffect(() => {
+
+        const AnimateObject = [imgRef, paraRef, infoRef];
 
         const gsapAnimation = (ref) => {
             gsap.fromTo(ref.current,
@@ -36,13 +36,14 @@ function About() {
 
         AnimateObject.map(item => {
             gsapAnimation(item);
+            return item;
         })
-    }, [])
+    }, [imgRef, paraRef, infoRef])
 
     return (
         <section className="about">
             <div className="content">
-                <img src={adrien} ref={imgRef}></img>
+                <img src={adrien} alt="Adrien Blanco" ref={imgRef}></img>
                 <p className="paragraph" ref={paraRef}>
                     Hello world.<br />
                     Moi c'est Adrien, 34 ans, passionné par l'informatique, la culture Internet et les <span>dinosaures</span> depuis l'enfance.
@@ -59,7 +60,7 @@ function About() {
                 </p>
                 <div className="info" ref={infoRef}>
                     <a href="https://github.com/AdrienBlanco"><h2 className="name"><BsGithub className="github-i" /> AdrienBlanco</h2>
-                        <h3>Suivez-moi sur Github!</h3></a>
+                        <h3>Suivez-moi sur Github !</h3></a>
                 </div>
             </div>
         </section>
