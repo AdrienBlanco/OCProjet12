@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react"
 import "./style.scss";
-import banner from "../../img/banner.webp"
 import {BsMouse} from "react-icons/bs";
 
 import gsap from "gsap";
@@ -83,7 +82,7 @@ export default function Home(){
                 <img src="./img/logo.png" alt="thinking-raptor" ref={logoRef}/>
             </div>
             <div className="banner" ref={triggerRef}>
-                <img src={banner} alt="bannière Jurassic Park sepia" width="1920" height="1312"/>
+                <img src="./img/banner.webp" alt="bannière Jurassic Park sepia" width="1920" height="1312"/>
                 <div className="text-at-bottom" ref={scrollRef}>
                     <p><BsMouse className="icon"/> SCROLL</p>
                     <span>POUR EN SAVOIR PLUS SUR MOI</span>

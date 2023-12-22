@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import "./style.scss";
-import adrien from "../../img/adrien.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { BsGithub } from "react-icons/bs";
@@ -43,7 +42,7 @@ function About() {
     return (
         <section className="about" id="about">
             <div className="content">
-                <img src={adrien} alt="Adrien Blanco" ref={imgRef}></img>
+                <img src="./img/adrien.webp" alt="Adrien Blanco" ref={imgRef}></img>
                 <p className="paragraph" ref={paraRef}>
                     Hello world.<br />
                     Moi c'est Adrien, 34 ans, passionné par l'informatique, la culture Internet et les <span>dinosaures</span> depuis l'enfance.
