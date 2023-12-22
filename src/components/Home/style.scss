@@ -35,6 +35,7 @@
             padding: 1rem;
             color: #2e2e2e;
             z-index: 1000;
+            box-sizing: border-box;
         }
     }
 
@@ -44,8 +45,9 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            height: 60%;
             z-index: 1;
+            height: 50%;
+            overflow: hidden;
         }
 
         .text-at-bottom {
@@ -93,9 +95,7 @@
     }
 
     .banner {
-        img {
-            height: 30%;
-        }
+
 
         .text-at-bottom {
             bottom: 4rem;
@@ -126,9 +126,7 @@
     }
 
     .banner {
-        img {
-            height: 30%;
-        }
+
 
         .text-at-bottom {
             bottom: 4rem;
@@ -159,9 +157,7 @@
     }
 
     .banner {
-        img {
-            height: 45%;
-        }
+
 
         .text-at-bottom {
             bottom: 6rem;
@@ -192,9 +188,7 @@
     }
 
     .banner {
-        img {
-            height: 45%;
-        }
+
 
         .text-at-bottom {
             bottom: 6rem;
@@ -225,9 +219,7 @@
     }
 
     .banner {
-        img {
-            height: 50%;
-        }
+
 
         .text-at-bottom {
             bottom: 6rem;
