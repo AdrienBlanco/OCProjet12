@@ -16,7 +16,6 @@
     font-weight: bold;
     font-size: 1rem;
     padding-left: 15px;
-    cursor: pointer;
   }
 
   .nav-menu {
@@ -32,6 +31,21 @@
 
       .nav-item {
         cursor: pointer;
+        position: relative;
+        &::after {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: -5px;
+					width: 0;
+					height: 2px;
+					background-color: rgba(#2e2e2e, 0.8);
+					transition: width 0.4s ease-in-out;
+				}
+
+				&:hover::after {
+					width: 100%;
+				}
       }
     }
   }

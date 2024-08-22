@@ -33,12 +33,14 @@ function Contact() {
     }, [textH1Ref]);
 
     return (
-        <footer className="contact" id="contact">
-            <h2 ref={textH1Ref}>CONTACTEZ-MOI</h2>
-            <br/>
-            <br/>
-            <a href="mailto:adrienblanco89@gmail.com">adrienblanco89@gmail.com</a>
-            <a href="tel:+33664148826">+33 (0)6 64 14 88 26</a>
+        <footer>
+            <div className="contact" id="contact">
+                <h2 ref={textH1Ref}>CONTACTEZ-MOI</h2>
+                <br />
+                <br />
+                <a href="mailto:adrienblanco89@gmail.com">adrienblanco89@gmail.com</a>
+                <a href="tel:+33664148826">+33 (0)6 64 14 88 26</a>
+            </div>
         </footer>
     );
 };

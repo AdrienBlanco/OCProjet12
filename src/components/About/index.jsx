@@ -11,6 +11,15 @@ function About() {
     const paraRef = useRef(null);
     const infoRef = useRef(null);
 
+    const calculateAge = (date) => {
+        const actualDate = new Date();
+        const birthDate = new Date(date);
+        const difference = actualDate.getTime() - birthDate.getTime();
+        return Math.floor(difference / (1000 * 60 * 60 * 24 * 365));
+    }
+
+    const age = calculateAge('1989-09-12');
+
     useEffect(() => {
 
         const AnimateObject = [imgRef, paraRef, infoRef];
@@ -45,10 +54,10 @@ function About() {
                 <img src="./img/adrien.webp" alt="Adrien Blanco" ref={imgRef}></img>
                 <p className="paragraph" ref={paraRef}>
                     Hello world.<br />
-                    Moi c'est Adrien, 34 ans, passionné par l'informatique, la culture Internet et les <span>dinosaures</span> depuis l'enfance.
+                    Moi c'est Adrien, {age} ans, passionné par l'informatique, la culture Internet et les <span>dinosaures</span> depuis l'enfance.
                     <br />
                     <br />
-                    C'est fin <span>2022</span> que je saute le pas pour apprendre les bases du <span>développement Web Frontend</span>.
+                    C'est fin <span>2022</span> que je saute le pas pour apprendre le <span>développement Web Frontend</span>.
                     Je rentre chez <span>OpenClassRooms</span> en tant qu'élève Intégrateur Web en <span>février 2023</span>.
                     Durant mon parcours j'ai touché à différents aspects du métier et j'ai pu me spécialiser en <span>React</span>.
                     <br />
@@ -58,8 +67,8 @@ function About() {
                     <br />
                 </p>
                 <div className="info" ref={infoRef}>
-                    <a href="https://github.com/AdrienBlanco"><h2 className="name"><BsGithub className="github-i" /> AdrienBlanco</h2>
-                        <h3>Suivez-moi sur Github !</h3></a>
+                    <a href="https://github.com/AdrienBlanco" target="_blank" rel="noopener noreferrer"><h2 className="name"><BsGithub className="github-i" /> AdrienBlanco</h2>
+                        <span>Suivez-moi sur Github !</span></a>
                 </div>
             </div>
         </section>

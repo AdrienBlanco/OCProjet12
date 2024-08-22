@@ -53,7 +53,7 @@ export default function Home(){
                 initY: "50vh",
                 endY: "1.5rem",
                 initOpacity: 1,
-                endOpacity: 1,
+                endOpacity: 0.8,
             },
             {
                 element: scrollRef,
@@ -82,7 +82,7 @@ export default function Home(){
                 <img src="./img/logo.png" alt="thinking-raptor" ref={logoRef}/>
             </div>
             <div className="banner" ref={triggerRef}>
-                <img src="./img/banner.webp" alt="bannière Jurassic Park sepia" width="1920" height="1246"/>
+                <img src="./img/banner.webp" alt="bannière Jurassic Park sepia" width="1920" height="1080"/>
                 <div className="text-at-bottom" ref={scrollRef}>
                     <p><BsMouse className="icon"/> SCROLL</p>
                     <span>POUR EN SAVOIR PLUS SUR MOI</span>

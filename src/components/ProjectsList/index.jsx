@@ -42,11 +42,10 @@ export default function Projects(){
             <div className="intro">
                 <img src="./img/logo2.png" alt="symbole circulaire" className="logo" ref={imgRef} />
                 <div className="text">
-                    <h2 ref={textH1Ref}>PROJETS</h2>
+                    <h2 ref={textH1Ref}>PROJETS DE FORMATION</h2>
                     <p ref={infoRef}>
-                        Hey,<br/>
-                        Voici une <span>sélection des projets</span> sur lesquels j'ai pu travailler en <span>2023</span>.<br/>
-                        Ces différents projets ont été réalisés dans le cadre de ma <span>formation chez OpenClassRooms</span>.
+                        Voici une <span>sélection des projets</span> sur lesquels j'ai pu travailler en <span>2023</span>,<br/>
+                        dans le cadre de ma <span>formation chez OpenClassRooms</span>.
                     </p>
                 </div>
             </div>
@@ -62,6 +61,7 @@ export default function Projects(){
                         github = {item.github}
                         className="project"
                         skills={item.skills}
+                        // page={item.page}
                     />
                 ))}
             </div>

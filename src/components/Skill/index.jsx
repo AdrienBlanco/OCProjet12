@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./style.scss";
 import { DiHtml5, DiCss3, DiJavascript, DiReact, DiSass, DiVisualstudio, DiGit } from "react-icons/di";
-
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -72,8 +71,8 @@ export default function Skill() {
                     <div className="code-box">
                         <pre>
                             1   const myTechnicalSkills = [ HTML, CSS, Javascript, React, Sass ];<br />
-                            2   const mySoftSkills = [ VisualStudioCode, Git];<br />
-                            3   console.log(mySkills: [...myTechnicalSkills, ...mySoftSkills]);
+                            2   const myTools = [ VisualStudioCode, Git ];<br />
+                            3   console.log(mySkills: [ ...myTechnicalSkills, ...myTools ]);
                         </pre>
                         <div className="typing"><span className="pointer">|</span></div>
                     </div>
