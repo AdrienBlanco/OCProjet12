@@ -78,7 +78,7 @@ export default function Home(){
     return(
         <section className="home" id="home">
             <div className="main-title">
-                <h1 ref={h1Ref}>Bienvenue sur mon <span>Portfolio</span></h1>
+                <h1 ref={h1Ref}>Adrien Blanco | Développeur Front-End</h1>
                 <img src="./img/logo_Adrien_Blanco.png" alt="thinking-raptor" ref={logoRef}/>
             </div>
             <div className="banner" ref={triggerRef}>
