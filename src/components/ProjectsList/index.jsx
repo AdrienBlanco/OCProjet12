@@ -44,10 +44,10 @@ export default function Projects() {
             <div className="intro">
                 <img src="./img/logo2.png" alt="symbole circulaire" className="logo" ref={imgRef} />
                 <div className="text">
-                    <h2 ref={textH1Ref}>Durant ma formation</h2>
+                    <h2 ref={textH1Ref}>Mes Travaux</h2>
                     <p ref={infoRef}>
 
-                        J'ai appris à créer une <span>application web complète et responsive</span>, <br /><span>dynamiser</span> des pages web, 
+                        Pendant mon parcours de formation, j'ai appris à créer une <span>application web complète et responsive</span>, <br /><span>dynamiser</span> des pages web, 
                         créer des interfaces <span>communiquant avec un back-end</span>,<br />
                         <span>optimiser les performances</span> et réaliser la maintenance de sites web déjà existants,<br />
                         ou encore <span>gérer un projet web en mode agile</span>.

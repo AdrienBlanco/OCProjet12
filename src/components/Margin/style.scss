@@ -1,40 +1,28 @@
 .margin {
-    position: relative;
-    width: 100vw;
+    width: auto;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
     .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
         height: auto;
-        transform: translateX(-50%) translateY(-50%);
+        line-height: 200%;
         font-weight: 600;
         font-family: 'Poiret One', cursive;
         color: black;
-        display: flex;
-        flex-direction: column;
 
-        .img__container {
-            border-radius: 50%;
-            width: 12rem;
-            height: 12rem;
-            overflow: hidden;
-            align-self: center;
-
-            .img {
-                object-fit: cover;
-                width: 12rem;
-                
-            }
-        }
 
         h2 {
             text-transform: uppercase;
+
         }
 
 
         .paragraph {
-            text-align: left;
+            text-align: center;
             font-size: 1.1rem;
 
             span {
@@ -83,16 +71,16 @@
 //Iphone
 @media screen and (max-width: 350px) {
     .margin {
-        height: 120vh;
+        height: 70vh;
 
         h2 {
             font-size: 1.2rem;
         }
 
         .content {
-            width: 15rem;
+            width: 100vw;
+            margin: 1rem;
             font-size: .8rem;
-            line-height: 180%;
         }
     }
 }
@@ -100,16 +88,16 @@
 //Iphone
 @media screen and (min-width: 351px) and (max-width: 599px) {
     .margin {
-        height: 120vh;
+        height: 70vh;
 
         h2 {
             font-size: 1.2rem;
         }
 
         .content {
-            width: 18rem;
+            width: 100%;
+            margin: 1rem;
             font-size: .8rem;
-            line-height: 180%;
         }
     }
 }
@@ -117,12 +105,11 @@
 //Ipad and small tablet 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
     .margin {
-        height: 80vh;
+        height: 50vh;
 
         .content {
             width: 30rem;
             font-size: .8rem;
-            line-height: 180%;
         }
     }
 }
@@ -130,12 +117,11 @@
 // Ipad pro 
 @media screen and (min-width: 1023px) and (max-width: 1919px) {
     .margin {
-        height: 50vh;
+        height: 40vh;
 
         .content {
             width: 45rem;
             font-size: .9rem;
-            line-height: 200%;
         }
     }
 }
@@ -143,7 +129,7 @@
 //desktop 
 @media screen and (min-width: 1920px) {
     .margin {
-        height: 55vh;
+        height: 50vh;
 
         .content {
             width: 50rem;

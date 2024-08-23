@@ -8,9 +8,11 @@ function Margin() {
 
     const imgRef = useRef(null);
     const paraRef = useRef(null);
+    const textH1Ref = useRef(null);
+
     useEffect(() => {
 
-        const AnimateObject = [imgRef, paraRef];
+        const AnimateObject = [imgRef, paraRef, textH1Ref];
 
         const gsapAnimation = (ref) => {
             gsap.fromTo(ref.current,
@@ -34,17 +36,18 @@ function Margin() {
             gsapAnimation(item);
             return item;
         })
-    }, [imgRef, paraRef])
+    }, [imgRef, paraRef, textH1Ref])
 
     return (
         <section className="margin" id="margin">
             <div className="content">
-                <div className="img__container" ref={imgRef}>
+                {/* <div className="img__container" ref={imgRef}>
                     <img className="img" src="./img/logo_margin.webp" alt="logo Margin Web Solution"></img>
-                </div>
-                <div className="paragraph" ref={paraRef}>
-                    <h2>Margin Web Solutions</h2>
-                    En <span>2024</span> je démarre mon activité en freelance avec <span>Marc</span>, un ami développeur. 
+                </div> */}
+                <div className="paragraph" >
+                    <h2 ref={textH1Ref}>Margin Web Solutions</h2>
+                    <div ref={paraRef}>
+                    En <span>2024</span> je démarre mon activité en freelance en même temps que <span>Marc</span>, un ami développeur. 
                     <br />
                     <br />
                     Pour plus d'efficacité, et aussi parce qu'<span>on aime le travail en équipe</span>, 
@@ -52,7 +55,7 @@ function Margin() {
                     <br />
                     <br />
                     Ne soyez pas timide et <span>venez jeter un oeil</span> : <a className="link-margin" href="https://margin-web.com" target="_blank" rel="noopener noreferrer">margin-web.com</a>
-                    <br />
+                </div>
                 </div>
             </div>
         </section>
