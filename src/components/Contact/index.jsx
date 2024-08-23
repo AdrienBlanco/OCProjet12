@@ -43,7 +43,7 @@ function Contact() {
                 <div className="link__wrapper" ref={paraRef}>
                     <a href="mailto:adrienblanco89@gmail.com" target="_blank" rel="noreferrer">adrienblanco89@gmail.com</a>
                     <a href="tel:+33664148826" target="_blank" rel="noreferrer">+33 (0)6 64 14 88 26</a>
-                    <a className="linkedin" href="https://www.linkedin.com/in/adrien-blanco/" target="_blank" rel="noreferrer">Linked<BsLinkedin className="linkedin-i" /></a>
+                    <a className="linkedin" href="https://www.linkedin.com/in/adrien-blanco/" target="_blank" rel="noreferrer" aria-label="lien vers linkedin">Linked<BsLinkedin className="linkedin-i" /></a>
                 </div>
             </div>
         </footer>

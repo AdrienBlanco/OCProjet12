@@ -25,7 +25,7 @@ export default function Navbar(){
                     <Link className="nav-item" to="contact" onClick={()=>setIsShowNav(false)} spy={true} smooth={true} offset={-50} duration={600}>CONTACT</Link>
                 </div>
                 <div className="nav-link">
-                    <a className="nav-item-linkedin" href="https://www.linkedin.com/in/adrien-blanco/" target="_blank" rel="noreferrer" onClick={()=>setIsShowNav(false)} ><BsLinkedin className="linkedin-i" /></a>
+                    <a className="nav-item-linkedin" href="https://www.linkedin.com/in/adrien-blanco/" target="_blank" rel="noreferrer" aria-label="lien vers linkedin" onClick={()=>setIsShowNav(false)} ><BsLinkedin className="linkedin-i" /></a>
                 </div>
                 <button onClick={()=>setIsShowNav(false)} className="nav-btn nav-close-btn" aria-label="Fermer la fenêtre"><FaTimes/></button>
             </nav>
