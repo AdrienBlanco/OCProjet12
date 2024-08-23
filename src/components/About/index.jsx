@@ -70,7 +70,7 @@ function About() {
                     <br />
                 </p>
                 <div className="info" ref={infoRef}>
-                    <a href="https://github.com/AdrienBlanco" target="_blank" rel="noopener noreferrer"><h3 className="name"><BsGithub className="github-i" /> AdrienBlanco</h3>
+                    <a href="https://github.com/AdrienBlanco" target="_blank" rel="noopener noreferrer"><h2 className="name"><BsGithub className="github-i" /> AdrienBlanco</h2>
                         <span>Suivez-moi sur Github !</span></a>
                 </div>
             </div>
