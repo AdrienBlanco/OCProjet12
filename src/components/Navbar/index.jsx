@@ -2,6 +2,7 @@ import React, {useState } from "react"
 import "./style.scss"
 import Link from "react-scroll/modules/components/Link";
 import {FaBars, FaTimes} from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
 
 export default function Navbar(){
     const [isShowNav, setIsShowNav] = useState(false);
@@ -22,6 +23,9 @@ export default function Navbar(){
                 </div>
                 <div className="nav-link">
                     <Link className="nav-item" to="contact" onClick={()=>setIsShowNav(false)} spy={true} smooth={true} offset={-50} duration={600}>CONTACT</Link>
+                </div>
+                <div className="nav-link">
+                    <a className="nav-item-linkedin" href="https://www.linkedin.com/in/adrien-blanco/" target="_blank" rel="noreferrer" onClick={()=>setIsShowNav(false)} spy={true} smooth={true} offset={-50} duration={600}><BsLinkedin className="linkedin-i" /></a>
                 </div>
                 <button onClick={()=>setIsShowNav(false)} className="nav-btn nav-close-btn" aria-label="Fermer la fenêtre"><FaTimes/></button>
             </nav>

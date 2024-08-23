@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from "react";
 import "./style.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { BsGithub } from "react-icons/bs";
 gsap.registerPlugin(ScrollTrigger);
 
 function Margin() {
@@ -45,8 +44,8 @@ function Margin() {
                 <div className="img__container" ref={imgRef}>
                     <img className="img" src="./img/logo_margin.webp" alt="logo Margin Web Solution"></img>
                 </div>
-                <div className="paragraph" ref={paraRef}>
-                    <h2>Margin Web Solutions</h2>
+                <div className="paragraph" ref={infoRef}>
+                    <h2 ref={paraRef}>Margin Web Solutions</h2>
                     En <span>2024</span> je démarre mon activité en freelance avec <span>Marc</span>, un ami développeur. 
                     <br />
                     <br />
@@ -56,10 +55,6 @@ function Margin() {
                     <br />
                     Ne soyez pas timide et <span>venez jeter un oeil</span> : <a className="link-margin" href="https://margin-web.com" target="_blank" rel="noopener noreferrer">margin-web.com</a>
                     <br />
-                </div>
-                <div className="info" ref={infoRef}>
-                    <a href="https://github.com/marginWebSolutions" target="_blank" rel="noopener noreferrer"><h3 className="name"><BsGithub className="github-i" /> marginWebSolutions</h3>
-                        <span>et notre Github est ici !</span></a>
                 </div>
             </div>
         </section>

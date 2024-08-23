@@ -35,7 +35,7 @@ function Contact() {
     return (
         <footer>
             <div className="contact" id="contact" ref={textH1Ref}>
-                <h2 >Entrons en contact</h2>
+                <h2 >Contactez-moi !</h2>
                 <p>Je suis super sympa 😁</p>
                 <br />
                 <div className="link__wrapper">

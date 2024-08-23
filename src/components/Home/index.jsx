@@ -79,10 +79,10 @@ export default function Home(){
         <section className="home" id="home">
             <div className="main-title">
                 <h1 ref={h1Ref}>Bienvenue sur mon <span>Portfolio</span></h1>
-                <img src="./img/logo.png" alt="thinking-raptor" ref={logoRef}/>
+                <img src="./img/logo_Adrien_Blanco.png" alt="thinking-raptor" ref={logoRef}/>
             </div>
             <div className="banner" ref={triggerRef}>
-                <img src="./img/banner.webp" alt="bannière Jurassic Park sepia" width="1920" height="1080"/>
+                <img src="./img/banner_Adrien_Blanco.webp" alt="bannière Jurassic Park sepia" width="1920" height="1080"/>
                 <div className="text-at-bottom" ref={scrollRef}>
                     <p><BsMouse className="icon"/> SCROLL</p>
                     <span>POUR EN SAVOIR PLUS SUR MOI</span>
