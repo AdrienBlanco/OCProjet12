@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./style.scss";
-
+import { BsLinkedin } from "react-icons/bs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -34,12 +34,15 @@ function Contact() {
 
     return (
         <footer>
-            <div className="contact" id="contact">
-                <h2 ref={textH1Ref}>CONTACTEZ-MOI</h2>
+            <div className="contact" id="contact" ref={textH1Ref}>
+                <h2 >Entrons en contact</h2>
+                <p>Je suis super sympa 😁</p>
                 <br />
-                <br />
-                <a href="mailto:adrienblanco89@gmail.com">adrienblanco89@gmail.com</a>
-                <a href="tel:+33664148826">+33 (0)6 64 14 88 26</a>
+                <div className="link__wrapper">
+                    <a href="mailto:adrienblanco89@gmail.com" target="_blank" rel="noreferrer">adrienblanco89@gmail.com</a>
+                    <a href="tel:+33664148826" target="_blank" rel="noreferrer">+33 (0)6 64 14 88 26</a>
+                    <a className="linkedin" href="https://www.linkedin.com/in/adrien-blanco/" target="_blank" rel="noreferrer">Linked<BsLinkedin className="linkedin-i" /></a>
+                </div>
             </div>
         </footer>
     );

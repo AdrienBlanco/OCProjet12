@@ -1,9 +1,7 @@
 .home {
     position: relative;
-    width: 100vw;
     height: 200vh;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
     background: #e0e0e0;
 
     .main-title {
@@ -40,8 +38,11 @@
     }
 
     .banner {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
+        overflow: hidden;
+
+        // display: none;
         img {
             position: absolute;
             bottom: 0;
@@ -52,7 +53,7 @@
             width: 100%;
             overflow: hidden;
             object-fit: cover;
-
+            box-sizing: border-box;
         }
 
         .text-at-bottom {

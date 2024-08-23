@@ -9,7 +9,7 @@ export default function Navbar(){
         <header className="navbar" style={{
             zIndex: `${isShowNav ? "10000" : "100"} `
         }}>
-            <p className="intro">Adrien Blanco</p>
+            <h1 className="intro">Adrien Blanco</h1>
             <nav className={`nav-menu ${isShowNav ? "responsive_nav" : ""}`}>
                 <div className="nav-link">
                     <Link className="nav-item" to="home" onClick={()=>setIsShowNav(false)} spy={true} smooth={true} offset={0} duration={600}>ACCUEIL</Link>

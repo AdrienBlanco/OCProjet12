@@ -6,6 +6,7 @@ import ProjectsList from './components/ProjectsList';
 import Skill from './components/Skill';
 import Contact from './components/Contact';
 import BackToTop from './components/BackToTop';
+import Margin from './components/Margin';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About/>
       <Skill/>
       <ProjectsList/>
+      <Margin />
       <Contact/>
       <BackToTop/>
     </div>

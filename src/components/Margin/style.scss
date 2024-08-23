@@ -1,4 +1,4 @@
-.about {
+.margin {
     position: relative;
     width: 100vw;
 
@@ -28,6 +28,10 @@
             }
         }
 
+        h2 {
+            text-transform: uppercase;
+        }
+
 
         .paragraph {
             text-align: left;
@@ -37,6 +41,12 @@
                 font-family: 'Silkscreen', 'sans-serif';
                 font-size: 1rem;
                 color: rgb(70, 70, 70);
+            }
+
+            .link-margin {
+                font-size: 1.5rem;
+                color: rgb(70, 70, 70);
+                text-decoration: underline;
             }
         }
 
@@ -72,7 +82,7 @@
 
 //Iphone
 @media screen and (max-width: 350px) {
-    .about {
+    .margin {
         height: 150vh;
 
         .content {
@@ -85,7 +95,7 @@
 
 //Iphone
 @media screen and (min-width: 351px) and (max-width: 599px) {
-    .about {
+    .margin {
         height: 150vh;
 
         .content {
@@ -98,7 +108,7 @@
 
 //Ipad and small tablet 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-    .about {
+    .margin {
         height: 80vh;
 
         .content {
@@ -111,7 +121,7 @@
 
 // Ipad pro 
 @media screen and (min-width: 1023px) and (max-width: 1919px) {
-    .about {
+    .margin {
         height: 75vh;
 
         .content {
@@ -124,7 +134,7 @@
 
 //desktop 
 @media screen and (min-width: 1920px) {
-    .about {
+    .margin {
         height: 75vh;
 
         .content {
