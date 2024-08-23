@@ -52,3 +52,27 @@
 
     }
 }
+
+//Iphone
+@media screen and (max-width: 350px) {
+    .margin {
+        height: 120vh;
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        .content {
+            width: 15rem;
+            font-size: .8rem;
+            line-height: 180%;
+        }
+    }
+}
+
+//Iphone
+@media screen and (min-width: 351px) and (max-width: 599px) {
+    .contact {
+        height: 70vh;
+    }
+}

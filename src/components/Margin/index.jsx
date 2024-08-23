@@ -8,11 +8,9 @@ function Margin() {
 
     const imgRef = useRef(null);
     const paraRef = useRef(null);
-    const infoRef = useRef(null);
-
     useEffect(() => {
 
-        const AnimateObject = [imgRef, paraRef, infoRef];
+        const AnimateObject = [imgRef, paraRef];
 
         const gsapAnimation = (ref) => {
             gsap.fromTo(ref.current,
@@ -36,7 +34,7 @@ function Margin() {
             gsapAnimation(item);
             return item;
         })
-    }, [imgRef, paraRef, infoRef])
+    }, [imgRef, paraRef])
 
     return (
         <section className="margin" id="margin">
@@ -44,8 +42,8 @@ function Margin() {
                 <div className="img__container" ref={imgRef}>
                     <img className="img" src="./img/logo_margin.webp" alt="logo Margin Web Solution"></img>
                 </div>
-                <div className="paragraph" ref={infoRef}>
-                    <h2 ref={paraRef}>Margin Web Solutions</h2>
+                <div className="paragraph" ref={paraRef}>
+                    <h2>Margin Web Solutions</h2>
                     En <span>2024</span> je démarre mon activité en freelance avec <span>Marc</span>, un ami développeur. 
                     <br />
                     <br />

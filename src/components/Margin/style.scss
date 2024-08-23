@@ -85,6 +85,10 @@
     .margin {
         height: 120vh;
 
+        h2 {
+            font-size: 1.2rem;
+        }
+
         .content {
             width: 15rem;
             font-size: .8rem;
@@ -97,6 +101,10 @@
 @media screen and (min-width: 351px) and (max-width: 599px) {
     .margin {
         height: 120vh;
+
+        h2 {
+            font-size: 1.2rem;
+        }
 
         .content {
             width: 18rem;
