@@ -82,7 +82,7 @@ export default function Home(){
                 <img src="./img/logo_Adrien_Blanco.png" alt="thinking-raptor" ref={logoRef}/>
             </div>
             <div className="banner" ref={triggerRef}>
-                <img src="./img/banner_Adrien_Blanco.webp" alt="bannière Jurassic Park sepia" width="1920" height="1080"/>
+                <img src="./img/banner_Adrien_Blanco.webp" alt="bannière Jurassic Park sepia" width="1920" height="1080" loading="lazy"/>
                 <div className="text-at-bottom" ref={scrollRef}>
                     <p><BsMouse className="icon"/> SCROLL</p>
                     <span>POUR EN SAVOIR PLUS SUR MOI</span>
