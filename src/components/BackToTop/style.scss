@@ -11,10 +11,12 @@
         .icon {
             font-size: 2rem;
             color: #2e2e2e;
-        }
+            transition: opacity 0.3s ease-in-out;
 
-        .icon:hover {
-            cursor: pointer;
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
         }
     }
 }
