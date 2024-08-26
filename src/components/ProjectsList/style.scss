@@ -45,9 +45,6 @@
         justify-content: center;
         align-items: center;
 
-        .project {
-            margin: 2rem;
-        }
     }
 }
 
@@ -73,6 +70,10 @@
 
     .projects {
         flex-wrap: wrap;
+
+        .project {
+            margin: 0.5rem;
+        }
     }
 }
 
@@ -94,6 +95,10 @@
 
     .projects {
         flex-wrap: wrap;
+
+        .project {
+            margin: 2rem;
+        }
     }
 }
 
@@ -114,5 +119,9 @@
 
     .projects {
         flex-wrap: wrap;
+
+        .project {
+            margin: 2rem;
+        }
     }
 }

@@ -3,21 +3,21 @@
     height: 200vh;
     font-family: 'Montserrat', sans-serif;
     background: #e0e0e0;
+    z-index: -100;
 
     .main-title {
         height: 100vh;
+        width: 100vw;
         background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         h1 {
-            position: fixed;
-            transform: translateX(-50%);
-            top: 0;
-            left: 50%;
-            padding: 1rem;
             font-family: 'Poiret One', cursive;
             white-space: nowrap;
             color: #2e2e2e;
-            z-index: 1000;
+
 
             span {
                 font-family: 'Silkscreen', 'sans-serif';
@@ -25,14 +25,9 @@
         }
 
         img {
-            position: fixed;
-            transform: translateX(-50%);
-            top: 0;
-            left: 50%;
             font-family: 'Montserrat', sans-serif;
             padding: 1rem;
             color: #2e2e2e;
-            z-index: 1000;
             box-sizing: border-box;
         }
     }
@@ -42,13 +37,8 @@
         height: 100vh;
         overflow: hidden;
 
-        // display: none;
         img {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
+            // position: absolute;
             height: 100vh;
             width: 100%;
             overflow: hidden;
@@ -62,14 +52,13 @@
             transform: translateX(-50%);
             font-weight: 600;
             color: #000000;
-            z-index: 10;
+            // overflow: hidden;
 
             p {
                 letter-spacing: .2rem;
 
                 .icon {
-                    animation: bouncing .6s ease-in-out;
-                    animation-iteration-count: infinite;
+                    animation: bouncing .6s ease-in-out infinite;
                     animation-direction: alternate;
                 }
 
@@ -91,12 +80,13 @@
 @media screen and (max-width: 350px) {
     .main-title {
         h1 {
-            font-size: .8rem;
+            font-size: .7rem;
             letter-spacing: .2rem;
         }
 
         img {
             height: 15rem;
+            width: 18rem;
         }
     }
 
@@ -122,12 +112,13 @@
 @media screen and (min-width: 351px) and (max-width: 599px) {
     .main-title {
         h1 {
-            font-size: .8rem;
+            font-size: .75rem;
             letter-spacing: .2rem;
         }
 
         img {
             height: 25rem;
+            width: 28rem;
         }
     }
 
@@ -159,6 +150,7 @@
 
         img {
             height: 30rem;
+            width: 34rem;
         }
     }
 
@@ -190,6 +182,7 @@
 
         img {
             height: 40rem;
+            width: 45rem;
         }
     }
 
@@ -221,6 +214,7 @@
 
         img {
             height: 40rem;
+            width: 45rem;
         }
     }
 
